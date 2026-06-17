@@ -1,0 +1,58 @@
+body{
+    background-image: url(microsoft.jpeg);
+    background-size: cover;
+}
+
+
+#fieldset{
+    border:10px rgb(23, 61, 23) solid;
+    background-color:rgba(65, 20, 7, 0.932);
+    width:110vh;
+    margin: auto;
+    color:white;
+    font-size: 30px;
+    border-radius: 40px;
+}
+
+#legenda{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#btn_cadastrar{
+    background-color: blue;
+    color: white;
+    font-size: 27px;
+    border: 8px  rgb(0, 0, 0) solid;
+    border-radius: 20px;
+    height: 10vh;
+    width: 25vh;
+    margin-left: 59.8vh;
+
+}
+
+#btn_listar{
+    background-color: blue;
+    color: white;
+    font-size: 27px;
+    border:  8px  rgb(0, 0, 0) solid;
+    border-radius: 20px;
+    height: 10vh;
+    width: 25vh;
+    margin-left: 6vh;
+
+}
+
+
+#btn_atender{
+    background-color: blue;
+    color: white;
+    font-size: 27px;
+    border:  8px  rgb(0, 0, 0) solid;
+    border-radius: 20px;
+    height: 10vh;
+    width: 25vh;
+    margin-left: 59.8vh;
+
+}

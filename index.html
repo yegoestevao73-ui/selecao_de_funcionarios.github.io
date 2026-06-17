@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Funcionários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <br><br> 
+
+
+
+
+
+    <form id="formulario">
+
+
+
+
+
+        <fieldset id="fieldset">
+
+            <legend id="legenda"><b>Seleção de Funcionários</b></legend><br>
+
+
+
+            <label for="id_nome">Nome: 
+                <input type="text" id="id_nome" placeholder="Informe seu nome" required>
+            </label><br/><br><br>
+
+
+
+            <label for="id_idade">Idade:  
+                <input type="number" id="id_idade" placeholder="Informe sua idade" required>
+            </label><br/><br>
+
+        </fieldset><br><br><br>
+
+
+
+
+
+
+
+        <fieldset id="fieldset">
+
+            <legend id="legenda"><b>Função Profissional</b></legend><br>
+
+
+            <label for="eng_soft">
+                <input type="radio" name="radio_s" id="eng_soft" value="Engenheiro de Software" checked>Engenheiro de Software
+            </label><br>
+
+
+            <label for="eng_ai">
+                <input type="radio" name="radio_s" id="eng_ai" value="Engenheiro de IA">Engenheiro de IA
+            </label><br>
+
+
+            <label for="ger_pro">
+                <input type="radio" name="radio_s" id="ger_pro" value="Gerente de Produto">Gerente de Produto
+            </label><br>
+
+
+            <label for="cien">
+                <input type="radio" name="radio_s" id="cien" value="Cientista de Dados">Cientista de Dados
+            </label><br>
+
+
+            <label for="tec_dat">
+                <input type="radio" name="radio_s" id="tec_dat" value="Técnico de Data Center">Técnico de Data Center
+            </label><br>
+
+
+            <label for="arq_nuv">
+                <input type="radio" name="radio_s" id="arq_nuv" value="Arquiteto de Nuvem">Arquiteto de Nuvem
+            </label><br>
+
+
+            <label for="eng_dev">
+                <input type="radio" name="radio_s" id="eng_dev" value="Engenheiro de DevOps">Engenheiro de DevOps
+            </label><br>
+            
+
+            <label for="esp_suc">
+                <input type="radio" name="radio_s" id="esp_suc" value="Especialista em Sucesso do Cliente">Especialista em Sucesso do Cliente
+            </label><br> 
+            
+
+            <label for="bi">
+                <input type="radio" name="radio_s" id="bi" value="Analista de BI">Analista de BI
+            </label><br> 
+            
+
+            <label for="con_sol">
+                <input type="radio" name="radio_s" id="con_sol" value="Consultor de Soluções">Consultor de Soluções
+            </label><br>
+
+
+            <label for="ger_prog">
+                <input type="radio" name="radio_s" id="ger_prog" value="Gerente de Programas de Negócios">Gerente de Programas de Negócios
+            </label><br><br>
+
+
+        </fieldset>
+
+
+
+
+
+
+    </form><br><br>
+
+
+
+
+
+
+    <button type="submit" form="formulario" class="botao" id="btn_cadastrar"><B>CADASTRAR</B></button>
+    <button type="button" onclick="listarLocalStorage()" class="botao" id="btn_listar"><b>LISTAR</b></button>
+    <br> <br><br><br>
+
+
+
+
+
+    <div>
+        <fieldset id="fieldset">
+            <legend id="legenda"><b>Lista de Seleção</b></legend>
+            <div id="cadastrados"></div>
+        </fieldset>
+    </div><br><br><br>
+    
+
+
+
+
+    <button class="botao" onclick="atenderProximo()" id="btn_atender"><b>APROVAR</b></button>
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
