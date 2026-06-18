@@ -161,7 +161,7 @@ function atenderProximo() {
     let candidato = fila_selecao.shift(); 
     alert("Selecionando Funcionário: " + candidato);
 
-    if (fila_banco.length === 0) {
+    if (fila_selecao.length === 0) {
         localStorage.removeItem("selecao_funcionarios");
     } else {
         localStorage.setItem("selecao_funcionarios", fila_selecao.join(","));
