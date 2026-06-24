@@ -72,11 +72,40 @@ function removerFuncionario(indice) {
 
 function editarFuncionario(indice) {
     let novoNome = prompt("Alterar nome do candidato:", fila_selecao[indice].nome);
+    let novaIdade = prompt("Alterar idade do candidato:", fila_selecao[indice].idade);
+    let novoCargo = prompt("Alterar cargo do candidato:", fila_selecao[indice].cargo);
 
-    if (novoNome !== null && novoNome.trim() !== "") {
+    if (novoNome !== null && novoNome.trim() !== "" &&
+        novaIdade !== null && novaIdade.trim() !== "" &&
+        novoCargo !== null && novoCargo.trim() !== "") {
+
         fila_selecao[indice].nome = novoNome;
+        fila_selecao[indice].idade = novaIdade;
+        fila_selecao[indice].cargo = novoCargo;
+
         localStorage.setItem("selecao_funcionarios", JSON.stringify(fila_selecao));
         listarLocalStorage();
+    }
+}
+
+function editarFuncionario(indice) {
+    let novoNome = prompt("Alterar nome do candidato:", fila_selecao[indice].nome);
+    
+    if (novoNome !== null && novoNome.trim() !== "") {
+        let novaIdade = prompt("Alterar idade do candidato:", fila_selecao[indice].idade);
+        
+        if (novaIdade !== null && novaIdade.trim() !== "") {
+            let novoCargo = prompt("Alterar cargo do candidato:", fila_selecao[indice].cargo);
+            
+            if (novoCargo !== null && novoCargo.trim() !== "") {
+                fila_selecao[indice].nome = novoNome;
+                fila_selecao[indice].idade = novaIdade;
+                fila_selecao[indice].cargo = novoCargo;
+                
+                localStorage.setItem("selecao_funcionarios", JSON.stringify(fila_selecao));
+                listarLocalStorage();
+            }
+        }
     }
 }
 
